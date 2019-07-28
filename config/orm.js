@@ -3,25 +3,24 @@ var connection = require('../config/connection.js');
 function objToSql(ob) {
     var arr = [];
 
-    // loop through the keys and push the key/value as a string int arr
+    // for loop to loop the keys and push the key/value as a string int arr
     for (var key in ob) {
         var value = ob[key];
-        // check to skip hidden properties
+        // checks to skip hidden properties
         if (Object.hasOwnProperty.call(ob, key)) {
-            // if string with spaces, add quotations (Fresca Burger => 'Fresca Burger')
+            // if string with spaces, add quotations (Vegan Burger => 'Vegan Burgers')
             if (typeof value === "string" && value.indexOf(" ") >= 0) {
                 value = "'" + value + "'";
             }
-            // e.g. {burger_name: 'Fresca Burger'} => ["burger_name='Fresca Burger'"]
-            // e.g. {devoured: true} => ["devoured=true"]
             arr.push(key + "=" + value);
         }
     }
 
-    // translate array of strings to a single comma-separated string
+    // translates the array of strings to a single comma-separated string
     return arr.toString();
 }
 
+//creating the orm var
 
 var orm = {
     selectAll: function(table, callback){
@@ -31,6 +30,7 @@ var orm = {
             callback(result);
         });
     },
+    //creating string to add to db
     insertOne: function(table, cols, values, callback){
         var queryString = "INSERT INTO " + table;
         queryString += " (";
