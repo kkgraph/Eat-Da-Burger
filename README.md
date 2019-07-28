@@ -4,8 +4,8 @@ Vegan Burger is a restaurant app that allows users to input the names of burgers
 ## Tech Used
 The app was created by using [Node](https://nodejs.org/en/) & its packages:
 
-- [MySQL](https://www.npmjs.com/package/mysql), 
-- [Express](https://www.npmjs.com/package/express), 
+- [MySQL](https://www.npmjs.com/package/mysql)
+- [Express](https://www.npmjs.com/package/express)
 - [Handlebars](https://www.npmjs.com/package/express-handlebars)
 - [Bulma](https://bulma.io/) for styling
 
@@ -17,3 +17,4 @@ The app was created by using [Node](https://nodejs.org/en/) & its packages:
 
 ## Live App
 
+http://kg-eat-da-burger.herokuapp.com/
