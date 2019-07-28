@@ -9,8 +9,8 @@
     "connection": "^1.0.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
-    "express-handlebars": "^3.0.0",
-    "mysql": "^2.16.0",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1",
     "mysql2": "^1.6.1",
     "orm": "^5.0.4",
     "sequelize": "^6.0.0"
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kkgraph/Eat-Da-Burger"
+    "url": "git+https://github.com/kkgraph/Eat-Da-Burger.git"
   },
   "author": "Kim Graff",
   "license": "ISC",
