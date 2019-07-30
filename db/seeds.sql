@@ -1,2 +1,2 @@
-INSERT INTO burgers (burgers_name) VALUES ('Gauc Black Bean');
-INSERT INTO burgers (burgers_name) VALUES ('Impossible Burger')
+INSERT INTO burgers (burger_name) VALUES ('Gauc Black Bean');
+INSERT INTO burgers (burger_name) VALUES ('Impossible Burger')
